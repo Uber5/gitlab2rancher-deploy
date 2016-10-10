@@ -1,0 +1,12 @@
+{
+  "name": "gitlab2rancher-deploy",
+  "version": "0.1.0",
+  "description": "Upgrade a rancher service from a Gitlab CI script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [ "gitlab", "rancher", "deploy" ],
+  "author": "Chris Oloff <chris@uber5.com> (http://about.uber5.com/)",
+  "license": "MIT"
+}
