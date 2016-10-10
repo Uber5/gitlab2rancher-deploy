@@ -15,5 +15,6 @@
   "license": "MIT",
   "dependencies": {
     "request": "2.75.0"
-  }
+  },
+  "engine": "node >= 5"
 }
