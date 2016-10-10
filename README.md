@@ -35,7 +35,7 @@ upgrade(serviceUrl)
 RANCHER_SERVICE_URL=https://my-rancher.my-host.com/v1/projects/1a5/services/1s29
 ```
 
-... and `RANCHER_ACCESS_KEY` and `RANCHER_SECRET_KEY`:
+... and `RANCHER_ACCESS_KEY` and `RANCHER_SECRET_KEY` (under `API` in Rancher):
 
-At the next deploy to branch `deploy-branch` of project `some-name/my-project`,
+At the next push to branch `deploy-branch` of project `some-name/my-project`,
 the Rancher service with id `1s29` should be upgraded accordingly.
