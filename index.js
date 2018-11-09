@@ -54,7 +54,11 @@ function waitUntilUpgradeAvailable(serviceUrl) {
   })
 }
 
-function upgrade(serviceUrl) {
+// The optional "startFist" parameter is described here:  
+//   https://rancher.com/docs/rancher/v1.6/en/cattle/upgrading/#in-service-upgrade
+// The default value - if not provided - is true.
+// You'll only want to set it to false if you are reusing the service IP address in Rancher.
+function upgrade(serviceUrl, startFirst) {
   return get(serviceUrl)
   .then(status => { // finish previous upgrade, if necessary
     console.log('launchConfig', status.launchConfig)
@@ -76,7 +80,7 @@ function upgrade(serviceUrl) {
     url: status.actions.upgrade,
     body: JSON.stringify({
       inServiceStrategy: {
-        startFirst: true,
+        startFirst: (typeof startFirst !== 'undefined') ? startFirst : true,
         launchConfig: status.launchConfig
       },
       toServiceStrategy: {
