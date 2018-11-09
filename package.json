@@ -1,6 +1,6 @@
 {
   "name": "gitlab2rancher-deploy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Upgrade a rancher service from a Gitlab CI script",
   "main": "index.js",
   "scripts": {
