@@ -14,7 +14,7 @@
   "author": "Chris Oloff <chris@uber5.com> (http://about.uber5.com/)",
   "license": "MIT",
   "dependencies": {
-    "request": "2.75.0"
+    "request": "^2.88.0"
   },
   "engine": "node >= 5"
 }
